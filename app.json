@@ -1,0 +1,39 @@
+{
+  "name": "F1-MD",
+  "description": "A Multi-functional WhatsApp Bot created by Silva Tech Inc",
+  "repository": "https://github.com/your-username/f1-md",
+  "logo": "https://i.ibb.co/BVt9McxS/photo-2025-06-15-12-14-29-7516148628621099032.jpg",
+  "keywords": ["whatsapp", "bot", "baileys", "nodejs", "silva", "f1-md"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "SESSION_ID": {
+      "description": "Your MEGA session ID (format: Silva~<file_id>)",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Bot owner's WhatsApp number in international format",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Display name for your bot",
+      "required": false
+    },
+    "PUBLIC_MODE": {
+      "description": "Set to true for public mode",
+      "required": false
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "scripts": {
+    "postdeploy": "npm install && node index.js"
+  }
+}
