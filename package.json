@@ -1,0 +1,60 @@
+{
+  "name": "f1-md",
+  "version": "2.0.1",
+  "description": "A WhatsApp Bot Created By Silva Tech Inc",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name f1-md",
+    "stop": "pm2 stop f1-md",
+    "restart": "pm2 restart f1-md"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "@dark-yasiya/yt-dl.js": "1.0.5",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "axios": "^1.2.5",
+    "btch-downloader": "^2.2.9",
+    "cheerio": "^1.0.0-rc.12",
+    "crypto-digest-sync": "^1.0.0",
+    "crypto-js": "latest",
+    "express": "latest",
+    "ffmpeg": "^0.0.4",
+    "file-type": "^16.5.3",
+    "file_size_url": "1.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.0",
+    "google-tts-api": "^2.0.2",
+    "megajs": "^1.1.0",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
+    "pino": "^7.0.5",
+    "pm2": "^6.0.8",
+    "qrcode-terminal": "^0.12.0",
+    "ruhend-scraper": "8.0.3",
+    "util": "^0.12.4",
+    "vm": "^0.1.0",
+    "wa-sticker-formatter": "^4.4.4",
+    "wa_set_pkg": "1.0.5",
+    "wikipedia": "2.1.2",
+    "yt-search": "2.11.1",
+    "api-dylux": "1.8.5",
+    "@mrnima/tiktok-downloader": "1.0.0",
+    "@mrnima/facebook-downloader": "1.0.0",
+    "mrnima-moviedl": "1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "whatsapp-bot",
+    "baileys",
+    "silva",
+    "f1-md",
+    "nodejs"
+  ],
+  "author": "Silva Tech Inc",
+  "license": "MIT"
+}
